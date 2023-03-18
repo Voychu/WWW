@@ -70,6 +70,8 @@ img{
     margin-right:1vw;
     margin-bottom: 1vh;
     width: 25vw;
+    float:right;
+    clear:right;
 }
 footer{
     text-align:center;
