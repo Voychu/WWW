@@ -1,6 +1,6 @@
 *{
     margin:0;
-    padding:0;
+    /*padding:0;*/
     box-sizing: border-box;
     background-color: antiquewhite;
     font-family: 'Times New Roman';
@@ -50,4 +50,28 @@ a:hover{
 h3{
     margin-top: 5vh;
     text-align: center;
+}
+ul{
+    list-style-type:armenian;
+}
+dt{
+    text-indent: 1%;
+}
+dd{
+    margin-left:5vw;
+}
+
+#omnie{
+    display:block;
+    width:50vw;
+}
+img{
+    margin-top:-9vh;
+    margin-right:1vw;
+    margin-bottom: 1vh;
+    width: 25vw;
+}
+footer{
+    text-align:center;
+    list-style-position:inside;
 }
