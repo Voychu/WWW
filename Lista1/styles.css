@@ -77,3 +77,13 @@ footer{
     text-align:center;
     list-style-position:inside;
 }
+
+@media only screen and (max-width: 400px){
+    #heading {
+            background-color: transparent;
+            font-size: 30px;
+            -webkit-text-fill-color: transparent;
+            -webkit-text-stroke-color: black;
+            -webkit-text-stroke-width: 2px;
+        }
+}
