@@ -1,6 +1,6 @@
 *{
     margin:0;
-    /*padding:0;*/
+    padding:0;
     box-sizing: border-box;
     background-color: antiquewhite;
     font-family: 'Times New Roman';
@@ -52,13 +52,7 @@ h3{
     text-align: center;
 }
 ul{
-    list-style-type:armenian;
-}
-dt{
-    text-indent: 1%;
-}
-dd{
-    margin-left:5vw;
+    list-style-type:armenian;   
 }
 
 #omnie{
@@ -70,20 +64,35 @@ img{
     margin-right:1vw;
     margin-bottom: 1vh;
     width: 25vw;
-    float:right;
-    clear:right;
+    float: right;
 }
 footer{
     text-align:center;
     list-style-position:inside;
 }
+#ZI{
+    background-color:grey;
+    display:block;
+}
+h1{
+    text-align: center;
+}
 
-@media only screen and (max-width: 400px){
+@media only screen and (max-width: 450px){
     #heading {
             background-color: transparent;
-            font-size: 30px;
+            font-size: 70px;
+            text-align: center;
             -webkit-text-fill-color: transparent;
             -webkit-text-stroke-color: black;
             -webkit-text-stroke-width: 2px;
         }
+    .linki{
+        display:flex;
+        margin:0;
+    }
+    img{
+        margin-top:-25vh;
+        width:40vw;
+    }
 }
