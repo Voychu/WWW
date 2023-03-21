@@ -9,12 +9,92 @@
 </head>
 <body>
     <nav>
-        <a href="Ciekawe_działy_matematyki.html" class="linki">Ciekawe działy matematyki</a>
+        <!--<a href="Ciekawe_działy_matematyki.html" class="linki">Ciekawe działy matematyki</a>-->
         <a href="index.html" class="linki">Strona główna</a>
         <a href="Zainteresowania_informatyczne.html" class="linki">Zainteresowania informatyczne</a>
         <a href="Zainteresowania_pozainformatyczne.html" class="linki">Zainteresowania pozainformatyczne</a>
     </nav>
+    <main id="ZI">
+        <section>
+            <h1>Moje projekty</h1>
+            <p>Dotychczas miałem mało doświadczenia z programowaniem, stąd moje projekty nie powalają. W dodatku wciąż szukam gałęzi informatyki,
+                które by mnie bardziej zainteresowały. Teraz dopiero, gdy zaznajomiłem się z podstawami, zaczynam bardziej angażować się w programowanie. 
+            </p>
+        </section>
+        <br>
+        <section>
+            <h4>Strona portfolio</h4>
+            <p>Jest to póki co jeden z ciekawszych moich projektów. Staram się wykorzystać jak najwięcej różnych znaczników i styli, aby zarówno poćwiczyć,
+                jak i zachować odpowiednią stylistykę. Poniżej fragment kodu, który zmienia wyświetlanie galerii w zależności od urządzenia, którego używamy.</p>
+                <pre>
+                    <code>
+ div.images{
+ display:flex;
+ flex-flow:column;
+ }
+ div.images div.row{
+ display: flex;
+ flex-flow:row;
+ }
+ div.images img{
+ width:25vw;
+ margin:0;
+ }
+ @media only screen and 
+ (max-width: 500px){
+ div.images {
+ display: flex;
+ flex-flow: column;
+ }
 
+ div.images div.row {
+ display: flex;
+ flex-flow: column;
+ }
+
+ div.images img {
+ width: 100vw;
+ margin: 0;
+ }}
+                </code> 
+                </pre>
+        </section>
+        <br>
+        <section>
+            <h4>Hello world</h4>
+            <p>>Niesamowicie skomplikowany projekt, który spędzał mi sen z powiek.</p>
+                <pre>
+                    <code>
+ public class Test
+ {
+     public static void main(String[] args)
+         {
+         System.out.println("Hello World!?");
+         }
+ }
+                    </code> 
+                </pre>
+        </section>
+        <br>
+        <section>
+            <h4>Zdjęcia kotów i żarty o Chucku Norrisie</h4>
+            <p>>Prosty, zabawny skrypt w bashu korzystający z różnych API wykonany jako zadanie na kurs: "Architektura komputerów i systemy operacyjne"</p>
+        <pre>
+        <code>
+#!/bin/bash
+
+wget -O chuck http://api.chucknorris.io/jokes/random
+wget -O randomcat https://api.thecatapi.com/v1/images/search
+randomurl=$(jq '.[] | .url' randomcat)
+randomurl=$(echo $randomurl | tr -d '\"\')
+wget -O catimage.jpg $randomurl
+catimg catimage.jpg
+jq '.value' chuck
+        </code> 
+        </pre>
+        </section>
+    </main>
+        <br>
     <footer>
         <h5>KONTAKT</h5>
         <ul>
