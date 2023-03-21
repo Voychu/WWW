@@ -55,9 +55,10 @@ ul{
     list-style-type:armenian;   
 }
 
-#omnie{
+.omnie{
     display:block;
     width:50vw;
+    font-size: 1.3em;
 }
 img{
     margin-top:-9vh;
@@ -73,6 +74,7 @@ footer{
 #ZI{
     background-color:grey;
     display:block;
+    font-size:1.3em;
 }
 h1{
     text-align: center;
