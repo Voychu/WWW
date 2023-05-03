@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="static/css/index.css" rel="stylesheet" type="text/css">
+
+    <script type="text/javascript" src="static/js/Point.js" defer></script>
+    <script type="text/javascript" src="static/js/Gallery.js" defer></script>
+    <script type="text/javascript" src="static/js/Canvas.js" defer></script>
+    <script type="text/javascript" src="static/js/index.js" defer></script>
+
+    <title>Puzzle</title>
+</head>
+
+<body>
+    <canvas id="canvas" width="448" height="640"></canvas>
+
+    <div class="settings">
+        <label>
+            Ilość w pionie :
+            <input type="number" name="heightCount" id="heightCount" required>
+        </label>
+        <label>
+            Ilość w poziomie :
+            <input type="number" name="widthCount" id="widthCount" required>
+        </label>
+        <button type="button" id="startGameButton" onclick="restartGame()">Graj</button>
+
+        <ul class="imagesList" id="imagesList">
+            <li><img src="static/images/image1.jpg" alt="beach" id="0"></li>
+            <li><img src="static/images/image2.jpg" alt="butterfly" id="1"></li>
+            <li><img src="static/images/image3.jpg" alt="car-race" id="2"></li>
+            <li><img src="static/images/image4.jpg" alt="coffee-milk" id="3"></li>
+        </ul>
+
+        <p id="imageTitle">Wybrano : </p>
+        <img src="static/images/beach-min.jpg" class="chosenImage" id="chosenImage" alt="chosenImage">
+    </div>
+
+</body>
+
+</html>
